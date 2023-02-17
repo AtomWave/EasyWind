@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"EasyWind"
+})
+
+<body>
+	<div class="wrapper">
+		<div class="content">
+			<main class="shop__top top-shop">
+				<a href="https://www.youtube.com/watch?v=8KjBQSiTP3w" class="top-shop__logo">
+					<img src="@img\icons\logo.svg" alt="">
+				</a>
+				<div class="top-shop__castom">
+					<img src="@img\icons\castom_w.svg" alt="">
+				</div>
+			</main>
+			<main class="shop__image image-shop">
+				<div class="image-shop__section"><img src="@img\icons\wind.svg" alt=""></div>
+				<div class="image-shop__section"><img src="@img\icons\staf.svg" alt=""></div>
+				<div class="image-shop__partners partners-shop"><h1>наши партнеры:</h1></div>
+			<div class="partners-shop__partners-icon">
+				<a href="https://sailinsochi.ru/"><img src="@img\icons\sail.svg" alt=""></a>
+				<a href="https://windsurfclub.ru/"><img src="@img\icons\wsc.svg" alt=""></a>
+			</div>
+			</main>
+		</div>
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>
