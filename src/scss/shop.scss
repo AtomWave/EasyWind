@@ -13,9 +13,6 @@
 }
 
 .page-content {
-	// .page-content__container
-	&__container {
-	}
 	// .page-content__header-logo
 	&__header-logo {
 		@include adaptiveValue("margin-bottom", 50, 10, 1368, 319.98, 1);
