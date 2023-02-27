@@ -2,17 +2,17 @@
 
 //====================================================================================================
 .content {
-	background-color: $redColor;
-	text-align: center;
-	@include adaptiveValue("padding-top", 117, 50, 1368, 319.98, 1);
-	@include adaptiveValue("padding-bottom", 91, 50, 1368, 319.98, 1);
-	// .content__page
 	&__page {
-		color: $whaitColor;
+		min-height: 100%;
+		@include adaptiveValue("padding-top", 117, 50, 1368, 319.98, 1);
+		@include adaptiveValue("padding-bottom", 91, 50, 1368, 319.98, 1);
 	}
 }
 
 .page-content {
+	background-color: $redColor;
+	text-align: center;
+	color: $whaitColor;
 	// .page-content__header-logo
 	&__header-logo {
 		@include adaptiveValue("margin-bottom", 50, 10, 1368, 319.98, 1);
@@ -20,8 +20,8 @@
 			max-width: 40%;
 		}
 	}
-	// .page-content__castom
-	&__castom {
+	// .page-content__custom
+	&__custom {
 		display: flex;
 		justify-content: center;
 		position: relative;
@@ -50,8 +50,8 @@
 	&__logo {
 	}
 }
-.castom-content {
-	// .castom-content__image
+.custom-content {
+	// .custom-content__image
 	&__image {
 		display: flex;
 		&::after {
