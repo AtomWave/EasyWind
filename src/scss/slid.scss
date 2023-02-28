@@ -64,6 +64,7 @@
 .swiper-content {
 }
 .image-slider {
+	position: relative;
 	padding: 30px 0px 70px 0px;
 	// .image-slider__wrapper
 	&__wrapper {
@@ -78,6 +79,7 @@
 			max-width: 100%;
 		}
 	}
+	
 }
 .swiper-container {
 }
@@ -86,10 +88,28 @@
 .swiper-slide {
 }
 .swiper-button-prev {
+	&::after{
+		content:'';
+		color: #000;
+		font-size: 80px;
+	}
 }
 .swiper-button-next {
+	&::after{
+		content:'';
+		color: #000;
+		font-size: 80px;
+	}
 }
 .swiper-pagination {
 }
 .swiper-scrollbar {
+}
+
+.swiper-pagination-bullet {
+	width: 20px;
+	height: 20px;
+	line-height: 20;
+	font-size: 14px;
+	background-color: #fff;
 }

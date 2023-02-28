@@ -40,9 +40,9 @@ function initSliders() {
 			autoHeight: true,
 			speed: 800,
 
-			//touchRatio: 0,
-			//simulateTouch: false,
-			//loop: true,
+			// touchRatio: 0,
+			// simulateTouch: false,
+			loop: true,
 			//preloadImages: false,
 			//lazy: true,
 
@@ -56,12 +56,12 @@ function initSliders() {
 			*/
 
 			// Пагинация
-			/*
+			
 			pagination: {
 				el: '.swiper-pagination',
 				clickable: true,
 			},
-			*/
+			
 
 			// Скроллбар
 			/*
