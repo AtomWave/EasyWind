@@ -49,22 +49,22 @@ function initSliders() {
 			// курсор перетаскивания
 			grabCursor: true,
 
-			/*
+			
 			// Эффекты
 			effect: 'fade',
 			autoplay: {
-				delay: 3000,
-				disableOnInteraction: false,
+				delay: 1000,
+				disableOnInteraction: true,
 			},
 			
-
+   
 			// Пагинация
-			
+			   /*
 			pagination: {
 				el: '.swiper-pagination',
 				clickable: true,
 			},
-			
+			*/
 
 			// Скроллбар
 			/*
