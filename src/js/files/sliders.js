@@ -42,7 +42,8 @@ function initSliders() {
       // Чувствительность свайпа
 			touchRatio: 1,
 			// Перетаскивание на ПК
-			simulateTouch: true,
+			// simulateTouch: true,
+			// Петля
 			loop: true,
 			//preloadImages: false,
 			//lazy: true,
