@@ -40,10 +40,10 @@ function initSliders() {
 			autoHeight: true,
 			speed: 800,
       // Чувствительность свайпа
-			touchRatio: 1,
-			// Перетаскивание на ПК
+			 touchRatio: 1,
+			//  Перетаскивание на ПК
 			// simulateTouch: true,
-			// Петля
+			//  Петля
 			loop: true,
 			//preloadImages: false,
 			//lazy: true,
@@ -60,12 +60,12 @@ function initSliders() {
 			
 
 			// Пагинация
-			/*
+			
 			pagination: {
 				el: '.swiper-pagination',
 				clickable: true,
 			},
-			*/
+			
 
 			// Скроллбар
 			/*
