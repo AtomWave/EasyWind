@@ -43,7 +43,6 @@ function initSliders() {
 			 touchRatio: 1,
 			//  Перетаскивание на ПК
 			// simulateTouch: true,
-			//  Петля
 			loop: true,
 			//preloadImages: false,
 			//lazy: true,
