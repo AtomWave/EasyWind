@@ -1,3 +1,6 @@
+//========================================================================================================================================================
+.wrapper {
+}
 .content {
 	// .content__page2
 	&__page2 {
@@ -10,26 +13,14 @@
 	background-color: $grayColor;
 	text-align: center;
 	color: $whaitColor;
-	position: relative;
+
 	// .page2-content__slider
 	&__slider {
-		padding-top: 410px;
-		// max-height: 1048px;
+		// padding-top: 410px;
+		min-height: 1048px;
 		@include adaptiveValue("margin-bottom", 50, 10, 1368, 319.98, 1);
 	}
-	// .page2-content__header-logo
-	&__header-logo {
-		background-color: rgba(0, 0, 0, 0.1);
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		img {
-			margin: 150px 0px;
-			max-width: 40%;
-		}
-	}
-	// .page2-content__custom
+	// .page2-content__blackcustom
 	&__blackcustom {
 		display: flex;
 		justify-content: center;
@@ -42,28 +33,36 @@
 		}
 	}
 }
-.logo-header {
-	// .logo-header__logo
-	&__logo {
-	}
-}
-.blackcustom-content {
-	// .custom-content__image
-	&__image {
-	}
-}
-
-//========================================================================================================================================================
-
 .slider-content {
-	min-width: 0;
+	position: relative;
 	// .slider-content__swiper
 	&__swiper {
 	}
 }
 .swiper-content {
+	// .swiper-content__header-logo
+	&__header-logo {
+		display: flex;
+		justify-content: center;
+		background-color: rgba(0, 0, 0, 0.1);
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		min-height: 100%;
+	}
 }
+// .logo-header
+.logo-header {
+	// .logo-header__logo
+	&__logo {
+		display: flex;
+	}
+}
+
+// .image-slider
 .image-slider {
+	overflow: hidden;
 	padding: 30px 0px 70px 0px;
 	// .image-slider__wrapper
 	&__wrapper {
@@ -75,10 +74,12 @@
 	&__image {
 		text-align: center;
 		img {
+			opacity: 0.3;
 			max-width: 100%;
 		}
 	}
 }
+
 .swiper-container {
 }
 .swiper-wrapper {
@@ -93,3 +94,10 @@
 }
 .swiper-scrollbar {
 }
+.blackcustom-content {
+	// .blackcustom-content__image
+	&__image {
+	}
+}
+
+//========================================================================================================================================================

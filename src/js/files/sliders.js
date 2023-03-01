@@ -39,12 +39,15 @@ function initSliders() {
 			spaceBetween: 0,
 			autoHeight: true,
 			speed: 800,
-
-			//touchRatio: 0,
-			//simulateTouch: false,
-			//loop: true,
+      // Чувствительность свайпа
+			touchRatio: 1,
+			// Перетаскивание на ПК
+			simulateTouch: true,
+			loop: true,
 			//preloadImages: false,
 			//lazy: true,
+			// курсор перетаскивания
+			grabCursor: true,
 
 			/*
 			// Эффекты
@@ -53,7 +56,7 @@ function initSliders() {
 				delay: 3000,
 				disableOnInteraction: false,
 			},
-			*/
+			
 
 			// Пагинация
 			/*
@@ -72,11 +75,13 @@ function initSliders() {
 			*/
 
 			// Кнопки "влево/вправо"
+			/*
 			navigation: {
 				prevEl: '.swiper-button-prev',
 				nextEl: '.swiper-button-next',
 			},
-
+      */
+		 
 			// Брейкпоинты
 			/*
 			breakpoints: {
