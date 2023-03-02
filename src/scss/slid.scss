@@ -16,7 +16,7 @@
 
 	// .page2-content__slider
 	&__slider {
-		@include adaptiveValue("margin-bottom", 120, 50, 1368, 319.98, 1);
+		@include adaptiveValue("margin-bottom", 120, 10, 1368, 319.98, 1);
 	}
 	// .page2-content__blackcustom
 	&__blackcustom {
@@ -24,9 +24,11 @@
 		justify-content: center;
 		position: relative;
 		flex: 1 1 auto;
+		padding: 0px 30px;
 		@include adaptiveValue("margin-bottom", 50, 20, 1368, 319.98, 1);
 		img {
 			max-width: 100%;
+			@include adaptiveValue("width", 1360, 320, 1368, 319.98, 1);
 			@include adaptiveValue("height", 55, 20, 1368, 319.98, 1);
 		}
 	}
@@ -59,9 +61,13 @@
 		align-items: center;
 		display: flex;
 		img {
-			@include adaptiveValue("max-width", 390, 120, 1368, 319.98, 1);
+			@include adaptiveValue("max-width", 500, 100, 3000, 319.98, 1);
 		}
 	}
+}
+// улучшаем контрастность лого.
+.filter-black {
+	filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(300%);
 }
 
 // .image-slider
@@ -72,6 +78,7 @@
 	}
 	// .image-slider__slide
 	&__slide {
+	
 	}
 	// .image-slider__image
 	&__image {
