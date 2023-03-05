@@ -58,10 +58,8 @@
 .logo-header {
 	// .logo-header__logo
 	&__logo {
-		align-items: center;
-		display: flex;
 		img {
-			@include adaptiveValue("max-width", 500, 100, 3000, 319.98, 1);
+			@include adaptiveValue("width", 600, 100, 3000, 319.98, 1);
 		}
 	}
 }
@@ -78,7 +76,6 @@
 	}
 	// .image-slider__slide
 	&__slide {
-	
 	}
 	// .image-slider__image
 	&__image {

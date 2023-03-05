@@ -4,8 +4,8 @@
 .content {
 	&__page {
 		min-height: 100%;
-		@include adaptiveValue("padding-top", 117, 50, 1368, 319.98, 1);
-		@include adaptiveValue("padding-bottom", 91, 50, 1368, 319.98, 1);
+		@include adaptiveValue("padding-top", 117, 50, 1360, 319.98, 1);
+		@include adaptiveValue("padding-bottom", 91, 50, 1360, 319.98, 1);
 	}
 }
 
@@ -15,9 +15,12 @@
 	color: $whaitColor;
 	// .page-content__header-logo
 	&__header-logo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		@include adaptiveValue("margin-bottom", 50, 10, 1368, 319.98, 1);
 		img {
-			max-width: 40%;
+			max-width: 290px;
 		}
 	}
 	// .page-content__custom
@@ -48,6 +51,9 @@
 .logo-header {
 	// .logo-header__logo
 	&__logo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 }
 .custom-content {
@@ -156,7 +162,6 @@
 	// .team-content__team-logo
 	&__team-logo {
 		img {
-			max-width: 30%;
 		}
 	}
 }
