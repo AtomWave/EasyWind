@@ -7,17 +7,11 @@
 <body>
 	<div class="wrapper">
 		<div class="content">
-			<div class="content__page2 page2-content">
-				<div class="page2-content__slider slider-content">
+			<div class="content__slid slid-content">
+				<div class="slid-content__slider slider-content">
 					<div class="slider-content__swiper swiper-content">
-						<!-- Логотип полутон -->
-						<div class="swiper-content__header-logo logo-header">
-							<a href="https://easywind.ru/" class="logo-header__logo">
-								<img src="@img\icons\windstaff.svg" class="filter-black" alt="">
-							</a>
-						</div>
 						<!-- главный контейнер слайдера -->
-						<div class="image-slider swiper-container">
+						<div class="swiper-content__slider-image  image-slider swiper-container">
 							<!-- Обязательная оболочка -->
 							<div class="image-slider__wrapper swiper-wrapper">
 								<!-- Сдайды -->
@@ -88,17 +82,25 @@
 							<!-- Добавляем, если нам нужна полоса прокрутки (scrollbar) -->
 							<!-- <div class="swiper-scrollbar"></div> -->
 						</div>
+						<!-- Логотип полутон -->
+						<div class="swiper-content__page-logo logo-page">
+							<a href="https://easywind.ru/" class="logo-page__logo-slid">
+								<img src="@img\icons\windstaff.png" class="filter-black" alt="">
+							</a>
+						</div>
 					</div>
 				</div>
-				<div class="page2-content__blackcustom blackcustom-content">
-					<div class="blackcustom-content__image">
-						<img src="@img\icons\customblack .svg" alt="">
+				<div class="slid-content__container">
+					<div class="slid-content__custom custom-content">
+						<div class="custom-content__image">
+							<img src="@img\icons\customblack.png" alt="">
+						</div>
+					</div>
+					<div class="slid-content__catalog">
+						<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 					</div>
 				</div>
-				<br><br><br><br><br><br><br>
-
 			</div>
-
 		</div>
 		@@include('html/_footer.htm',{})
 	</div>

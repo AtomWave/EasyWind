@@ -47,7 +47,7 @@ function initSliders() {
 			// preloadImages: false,
 			// lazy: true,
 			// курсор перетаскивания
-			grabCursor: true,
+			// grabCursor: true,
 
 			
 			// Эффекты

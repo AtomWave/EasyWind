@@ -1,84 +1,21 @@
-//====================================================================================================
-.footer {
-	background-color: $redColor;
-	// .footer__container
-	&__container {
-	}
-	// .footer__page-content
-	&__page-content {
-		// padding-top: 130px;
-	}
-}
-.page-content {
-	// .page-content__picture
-	&__picture {
-	}
-}
-.footer-content {
-	// .footer-content__team
-	&__team {
-		// @include adaptiveValue("padding-top", 415, 50, 1360, 319.98, 1);
-		// @include adaptiveValue("padding-bottom", 58, 25, 1360, 319.98, 1);
-	}
-	// .footer-content__copyright
-	&__copyright {
-	}
-}
-.team-content {
-	// .team-content__footer-logo
-	&__footer-logo {
-		// display: flex;
-		// flex-direction: column;
-		// align-items: center;
-		img {
-			// max-height: 253px;
-			// max-width: 100%;
-			// @include adaptiveValue("max-width", 184, 30, 3000, 319.98, 1);
-		}
-	}
-}
-.copyright-content {
-	// .copyright-content__text
-	&__text {
-		// color: $whaitColor;
-	}
-}
+//========================================================================================================================================================
 
-//====================================================================================================
-.footer {
-	// .footer__container
-	&__container {
-	}
-	// .footer__page-content
-	&__page-content {
+.content-page {
+	// .content-page__bottom
+	&__bottom {
+		@include adaptiveValue("padding-top", 413, 50, 1368, 319.98, 1);
 	}
 }
-.page-content {
-	// .page-content__picture
-	&__picture {
+.bottom-content {
+	p {
+		padding-bottom: 3px;
 	}
-	// .page-content__footer
-	&__footer {
-	}
-}
-.footer-content {
-	// .footer-content__footer-logo
-	&__footer-logo {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-	// .footer-content__copyright
-	&__copyright {
-	}
-}
-.logo-footer {
-	// .logo-footer__logo
-	&__logo {
-	}
-}
-.copyright-content {
-	// .copyright-content__text
-	&__text {
+	// .bottom-content__bottom-logo
+	&__bottom-logo {
+		@include adaptiveValue("padding-bottom", 58, 10, 1368, 319.98, 1);
+		img {
+			max-width: 184px;
+			@include adaptiveValue("width", 184, 60, 1368, 319.98, 1);
+		}
 	}
 }
