@@ -1,0 +1,61 @@
+<div class="footer__content content-page">
+				<div class="content-page">
+					<div class="content-page__picture">
+						<img src="img\icons\footer.png" alt="">
+					</div>
+					<div class="content-page__bottom bottom-content">
+						<div class="bottom-content__bottom-logo logo-page">
+							<img src="img\icons\footer_logo.svg" alt="">
+						</div>
+						<div class="copyright-content__text text-content">
+							<p>
+								Copyright <span>Ⓒ</span> <span>easywind</span> 2022-2023 <span>Все права защищены.</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+.content-page__picture img {
+    max-width: 100%;
+    max-height: 272px;
+    padding: 0 30px;
+}
+
+===========================================================================
+
+<div class="swiper-content__page-logo logo-page">
+							<a target="_blank" href="https://easywind.ru/" class="logo-page__logo-slid">
+								<img src="img\icons\windstaff.png" class="filter-black" alt="">
+							</a>
+						</div>
+
+.logo-page__logo-slid img {
+    max-width: 330px;
+}
+
+============================================================================
+
+<div class="slid-content__container">
+					<div class="slid-content__custom custom-content">
+						<div class="custom-content__image">
+							<img src="img\icons\customblack.png" alt="">
+						</div>
+					</div>
+					<div class="slid-content__catalog">
+						<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+					</div>
+				</div>
+
+[class*=__container] {
+    max-width: 960px;
+    box-sizing: content-box;
+    margin: 0 auto;
+    padding: 0 0.9375rem;
+
+===============================================================================
+
+
+
+
