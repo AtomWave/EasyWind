@@ -57,7 +57,7 @@
 	&__logo-slid {
 		img {
 			@include adaptiveValue("width", 900, 120, 3000, 319.98, 1);
-			max-width: 390px;
+			max-width: 330px;
 		}
 	}
 }
