@@ -13,7 +13,9 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		padding: 96px 0px;
+		// padding: 96px 0px;
+		@include adaptiveValue("padding-top", 96, 30, 1368, 319.98, 1);
+		@include adaptiveValue("padding-bottom", 96, 30, 1368, 319.98, 1);
 	}
 	// .footer-page__picture
 	&__picture {
@@ -39,8 +41,8 @@
 		img {
 			max-width: 184px;
 			@include adaptiveValue("width", 184, 60, 1368, 319.98, 1);
-			// max-width: 100%;
 			max-height: 14vh;
+			min-height: 95px;
 		}
 	}
 }
@@ -49,7 +51,7 @@
 .copyright-content {
 	// .copyright-content__footer-text
 	&__footer-text {
-		p{
+		p {
 			padding-bottom: 0;
 		}
 	}
