@@ -71,31 +71,20 @@
 	&__custom {
 		flex: 1 1 auto;
 		margin-bottom: 2vh;
-		// position: relative;
 		display: flex;
 		&::before {
 			content: "";
 			flex: 1 1 auto;
-			// width: 45%;
 			height: 1px;
 			border-top: 1px solid rgba(0, 0, 0, 0.1);
 			background-color: #fff;
-			// position: absolute;
-			// left: 0;
-			// bottom: 50%;
-			// z-index: 10;
 		}
 		&::after {
 			content: "";
 			flex: 1 1 auto;
-			// width: 45%;
 			height: 1px;
 			border-top: 1px solid rgba(0, 0, 0, 0.1);
 			background-color: #fff;
-			// position: absolute;
-			// right: 0;
-			// bottom: 50%;
-			// z-index: 10;
 		}
 	}
 	// .inner-page__picture

@@ -19,7 +19,7 @@ EffectFade, Lazy, Manipulation
 // Базовые стили
 // import "../../scss/base/swiper.scss";
 // Полный набор стилей из scss/libs/swiper.scss
-// import "../../scss/libs/swiper.scss";
+import "../../scss/libs/swiper.scss";
 // Полный набор стилей из node_modules.
 import 'swiper/css';
 
@@ -38,12 +38,12 @@ function initSliders() {
 			slidesPerView: 1,
 			spaceBetween: 0,
 			autoHeight: true,
-			speed: 800,
+			speed: 1000,
       // Чувствительность свайпа
 			//  touchRatio: 1,
 			//  Перетаскивание на ПК
-			simulateTouch: true,
-			loop: false,
+			// simulateTouch: true,
+			loop: true,
 			// preloadImages: false,
 			// lazy: true,
 			// курсор перетаскивания
@@ -51,17 +51,17 @@ function initSliders() {
 
 			
 			// Эффекты
-	  /*
+
 			effect: 'fade',
 			fadeEffect: {
-          crossFade: true,
+          crossFade: false,
 			 },
-    */
+ 
 
 			autoplay: {
-				delay: 3000,
-				disableOnInteraction: true,
-				stopOnLastSlide: true,
+				delay: 2500,
+				disableOnInteraction: false,
+				stopOnLastSlide: false,
 			},
 		
 

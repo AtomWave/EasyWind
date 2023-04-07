@@ -10,12 +10,14 @@
 	padding: 0px 4vw;
 	// .footer-page__content
 	&__content {
+		max-width: 53.75rem;
+		box-sizing: content-box;
+		margin: 0 auto;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		// padding: 96px 0px;
 		@include adaptiveValue("padding-top", 96, 30, 1368, 319.98, 1);
-		@include adaptiveValue("padding-bottom", 96, 30, 1368, 319.98, 1);
+		@include adaptiveValue("padding-bottom", 50, 30, 1368, 319.98, 1);
 	}
 	// .footer-page__picture
 	&__picture {
@@ -27,7 +29,7 @@
 	}
 	// .footer-page__bottom
 	&__bottom {
-		@include adaptiveValue("padding-top", 413, 50, 1368, 319.98, 1);
+		@include adaptiveValue("padding-top", 240, 50, 1368, 319.98, 1);
 	}
 }
 
