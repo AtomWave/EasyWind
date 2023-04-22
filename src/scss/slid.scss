@@ -39,6 +39,9 @@
 	// .slid-content__catalog
 	&__catalog {
 		position: relative;
+		padding: 50px 0px;
+		display: flex;
+		flex-direction: column;
 		&::before {
 			content: "";
 			width: 100%;
@@ -130,4 +133,5 @@
 		transform: scale(1.6);
 	}
 }
+
 //========================================================================================================================================================
