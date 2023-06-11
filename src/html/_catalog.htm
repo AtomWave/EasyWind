@@ -1,104 +1,254 @@
-<ul class="products clearfix">
-	<li class="product-wrapper">
-		<a href="" class="product">
-			<div class="product-photo">
-				<img src="@img\catalog\1.jpg" alt="">
+<div class="products">
+	<div class="ProductItem">
+		<div class="carousel-wrapper product-laikra-1">
+			<span id="target-item-1-1"></span>
+			<span id="target-item-1-2"></span>
+			<span id="target-item-1-3"></span>
+			<div class="carousel-item item-1-1">
+				<div class="product-photo">
+					<img class="first" src="@img\catalog\1.jpg" alt="">
+					<img class="second" src="@img\catalog\2.jpg" alt="">
+				</div>
+				<a class="arrow arrow-prev" href="#target-item-1-3"></a>
+				<a class="arrow arrow-next" href="#target-item-1-2"></a>
 			</div>
-		</a>
-	</li>
-	<li class="product-wrapper">
-		<a href="" class="product">
-			<div class="product-photo">
-				<img src="@img\catalog\2.jpg" alt="">
+			<div class="carousel-item item-1-2">
+				<div class="product-photo">
+					<img src="@img\catalog\3.jpg" alt="">
+				</div>
+				<a class="arrow arrow-prev" href="#target-item-1-1"></a>
+				<a class="arrow arrow-next" href="#target-item-1-3"></a>
 			</div>
-		</a>
-	</li>
-	<li class="product-wrapper">
-		<a href="" class="product">
-			<div class="product-photo">
-				<img src="@img\catalog\3.jpg" alt="">
+			<div class="carousel-item item-1-3">
+				<div class="product-photo">
+					<img src="@img\catalog\4.jpg" alt="">
+				</div>
+				<a class="arrow arrow-prev" href="#target-item-1-2"></a>
+				<a class="arrow arrow-next" href="#target-item-1-1"></a>
 			</div>
-		</a>
-	</li>
-	<li class="product-wrapper">
-		<a href="" class="product">
-			<div class="product-photo">
-				<img src="@img\catalog\4.jpg" alt="">
+			<a class="quick-view-button">
+				<div href="" class="product-preview">
+					<img src="@img\icons\view.svg" alt="">
+				</div>
+			</a>
+		</div>
+		<div class="ProductItem__Info">
+			<div class="ProductItem__Title">
+				<a href="">
+					<span class="productKey">Insignia Tee (Regular Fit)</span>
+				</a>
 			</div>
-		</a>
-	</li>
-	<li class="product-wrapper">
-		<a href="" class="product">
-			<div class="product-photo">
-				<img src="@img\catalog\5.jpg" alt="">
+			<div class="ProductItem__Colour">
+				<h3>Shadow Black</h3>
 			</div>
-		</a>
-	</li>
-	<li class="product-wrapper">
-		<a href="" class="product">
-			<div class="product-photo">
-				<img src="@img\catalog\6.jpg" alt="">
+			<div class="ProductItem__PriceList">
+				<span class="ProductItem__Price">2600</span>
 			</div>
-		</a>
-	</li>
-	<li class="product-wrapper">
-		<a href="" class="product">
-			<div class="product-photo">
-				<img src="@img\catalog\1.jpg" alt="">
-			</div>
-		</a>
-	</li>
-	<li class="product-wrapper">
-		<a href="" class="product">
-			<div class="product-photo">
-				<img src="@img\catalog\2.jpg" alt="">
-			</div>
-		</a>
-	</li>
-</ul>
-
-<!--Вот наша основная оболочка.
-Поскольку наши элементы карусели получают свой размер от своего родителя,
-мы должны указать его высоту. -->
-<div class="carousel-wrapper">
-	<!--Карусель использует обычные ссылки для циклического просмотра каждого элемента.
-	Ссылки на самом деле нацелены на эти display: none; охватывает, поэтому наша страница не
-	прыгайте, как обычно при использовании прыжковых ссылок.-->
-	<span id="target-item-1"></span>
-	<span id="target-item-2"></span>
-	<span id="target-item-3"></span>
-	<!--Вот наша карусель.
-	У каждого есть класс «элемент карусели», который мы используем для общего стиля.
-	и класс item-#, который мы используем для управления его непрозрачностью.
-	в зависимости от того, какой target-item-# в настоящее время нацелен -->
-	<div class="carousel-item item-1 light">
-		<!--Мы можем добавить сюда любой контент, просто убедитесь, что
-		ваша .carousel-wrapper достаточно велика, чтобы вместить весь контент. -->
-		<img src="@img\catalog\1.jpg" alt="">
-		<h2>Элемент 1</h2>
-		<p>Содержимое будет здесь.</p>
-		<!--Вот ссылки, управляющие каруселью! Убеждаться
-		href каждого из них указывает на правильный целевой элемент-#
-		чтобы карусель вращалась последовательно. -->
-		<a class="arrow arrow-prev" href="#target-item-3"></a>
-		<a class="arrow arrow-next" href="#target-item-2"></a>
+		</div>
 	</div>
-	<!--А вот еще парочка элементов карусели, чтобы
-	у нас есть некоторый контент для прокрутки. Обратите внимание на «легкий» класс?
-	Королевский синий — довольно темный цвет фона, поэтому мы добавим CSS
-	правило, чтобы сделать текст белым, если элемент карусели имеет этот класс-->
-	<div class="carousel-item item-2">
-		<img src="@img\catalog\3.jpg" alt="">
-		<h2>Элемент 2</h2>
-		<p>Содержимое будет здесь.</p>
-		<a class="arrow arrow-prev" href="#target-item-1"></a>
-		<a class="arrow arrow-next" href="#target-item-3"></a>
+	<div class="ProductItem">
+		<div class="carousel-wrapper product-laikra-2">
+			<span id="target-item-2-1"></span>
+			<span id="target-item-2-2"></span>
+			<span id="target-item-2-3"></span>
+			<div class="carousel-item item-2-1">
+				<div class="product-photo">
+					<img class="first" src="@img\catalog\5.jpg" alt="">
+					<img class="second" src="@img\catalog\6.jpg" alt="">
+				</div>
+				<a class="arrow arrow-prev" href="#target-item-2-3"></a>
+				<a class="arrow arrow-next" href="#target-item-2-2"></a>
+			</div>
+			<div class="carousel-item item-2-2">
+				<div class="product-photo">
+					<img src="@img\catalog\7.jpg" alt="">
+				</div>
+				<a class="arrow arrow-prev" href="#target-item-2-1"></a>
+				<a class="arrow arrow-next" href="#target-item-2-3"></a>
+			</div>
+			<div class="carousel-item item-2-3">
+				<div class="product-photo">
+					<img src="@img\catalog\8.jpg" alt="">
+				</div>
+				<a class="arrow arrow-prev" href="#target-item-2-2"></a>
+				<a class="arrow arrow-next" href="#target-item-2-1"></a>
+			</div>
+			<a class="quick-view-button">
+				<div href="" class="product-preview">
+					<img src="@img\icons\view.svg" alt="">
+				</div>
+			</a>
+		</div>
+		<div class="ProductItem__Info">
+			<div class="ProductItem__Title">
+				<a href="">
+					<span class="productKey">Impact Long Sleeve Tee (Regular Fit) Workwear Blue</span>
+				</a>
+			</div>
+			<div class="ProductItem__Colour">
+				<h3>Shadow Black</h3>
+			</div>
+			<div class="ProductItem__PriceList">
+				<span class="ProductItem__Price">2600</span>
+			</div>
+		</div>
 	</div>
-	<div class="carousel-item item-3 light">
-		<img src="@img\catalog\5.jpg" alt="">
-		<h2>Элемент 3</h2>
-		<p>Содержимое будет здесь.</p>
-		<a class="arrow arrow-prev" href="#target-item-2"></a>
-		<a class="arrow arrow-next" href="#target-item-1"></a>
+	<div class="ProductItem">
+		<div class="carousel-wrapper product-laikra-3">
+			<span id="target-item-3-1"></span>
+			<span id="target-item-3-2"></span>
+			<span id="target-item-3-3"></span>
+			<div class="carousel-item item-3-1">
+				<div class="product-photo">
+					<img class="first" src="@img\catalog\9.jpg" alt="">
+					<img class="second" src="@img\catalog\10.jpg" alt="">
+				</div>
+				<a class="arrow arrow-prev" href="#target-item-3-3"></a>
+				<a class="arrow arrow-next" href="#target-item-3-2"></a>
+			</div>
+			<div class="carousel-item item-3-2">
+				<div class="product-photo">
+					<img src="@img\catalog\11.jpg" alt="">
+				</div>
+				<a class="arrow arrow-prev" href="#target-item-3-1"></a>
+				<a class="arrow arrow-next" href="#target-item-3-3"></a>
+			</div>
+			<div class="carousel-item item-3-3">
+				<div class="product-photo">
+					<img src="@img\catalog\12.jpg" alt="">
+				</div>
+				<a class="arrow arrow-prev" href="#target-item-3-2"></a>
+				<a class="arrow arrow-next" href="#target-item-3-1"></a>
+			</div>
+			<a class="quick-view-button">
+				<div href="" class="product-preview">
+					<img src="@img\icons\view.svg" alt="">
+				</div>
+			</a>
+		</div>
+		<div class="ProductItem__Info">
+			<div class="ProductItem__Title">
+				<a href="">
+					<span class="productKey">Insignia Tee (Regular Fit)</span>
+				</a>
+			</div>
+			<div class="ProductItem__Colour">
+				<h3>Shadow Black</h3>
+			</div>
+			<div class="ProductItem__PriceList">
+				<span class="ProductItem__Price">2600</span>
+			</div>
+		</div>
 	</div>
+	<div class="ProductItem">
+		<div class="carousel-wrapper product-laikra-4">
+			<span id="target-item-4-1"></span>
+			<span id="target-item-4-2"></span>
+			<span id="target-item-4-3"></span>
+			<div class="carousel-item item-4-1">
+				<div class="product-photo">
+					<img class="first" src="@img\catalog\13.jpg" alt="">
+					<img class="second" src="@img\catalog\14.jpg" alt="">
+				</div>
+				<a class="arrow arrow-prev" href="#target-item-4-3"></a>
+				<a class="arrow arrow-next" href="#target-item-4-2"></a>
+			</div>
+			<div class="carousel-item item-4-2">
+				<div class="product-photo">
+					<img src="@img\catalog\15.jpg" alt="">
+				</div>
+				<a class="arrow arrow-prev" href="#target-item-4-1"></a>
+				<a class="arrow arrow-next" href="#target-item-4-3"></a>
+			</div>
+			<div class="carousel-item item-4-3">
+				<div class="product-photo">
+					<img src="@img\catalog\16.jpg" alt="">
+				</div>
+				<a class="arrow arrow-prev" href="#target-item-4-2"></a>
+				<a class="arrow arrow-next" href="#target-item-4-1"></a>
+			</div>
+			<a class="quick-view-button">
+				<div href="" class="product-preview">
+					<img src="@img\icons\view.svg" alt="">
+				</div>
+			</a>
+		</div>
+		<div class="ProductItem__Info">
+			<div class="ProductItem__Title">
+				<a href="">
+					<span class="productKey">Insignia Tee (Regular Fit)</span>
+				</a>
+			</div>
+			<div class="ProductItem__Colour">
+				<h3>Shadow Black</h3>
+			</div>
+			<div class="ProductItem__PriceList">
+				<span class="ProductItem__Price">2600</span>
+			</div>
+		</div>
+	</div>
+	<!-- <div class="carousel-wrapper product-laikra-2">
+		<span id="target-item-2-1"></span>
+		<span id="target-item-2-2"></span>
+		<span id="target-item-2-3"></span>
+		<div class="carousel-item item-2-1 light">
+			<img src="@img\catalog\1.jpg" alt="">
+			<div class="heading">
+				<h2>Элемент 1</h2>
+				<p>Содержимое будет здесь.</p>
+			</div>
+			<a class="arrow arrow-prev" href="#target-item-2-3"></a>
+			<a class="arrow arrow-next" href="#target-item-2-2"></a>
+		</div>
+		<div class="carousel-item item-2-2">
+			<img src="@img\catalog\3.jpg" alt="">
+			<div class="heading">
+				<h2>Элемент 2</h2>
+				<p>Содержимое будет здесь.</p>
+			</div>
+			<a class="arrow arrow-prev" href="#target-item-2-1"></a>
+			<a class="arrow arrow-next" href="#target-item-2-3"></a>
+		</div>
+		<div class="carousel-item item-2-3 light">
+			<img src="@img\catalog\5.jpg" alt="">
+			<div class="heading">
+				<h2>Элемент 3</h2>
+				<p>Содержимое будет здесь.</p>
+			</div>
+			<a class="arrow arrow-prev" href="#target-item-2-2"></a>
+			<a class="arrow arrow-next" href="#target-item-2-1"></a>
+		</div>
+	</div>
+	<div class="carousel-wrapper product-laikra-3">
+		<span id="target-item-3-1"></span>
+		<span id="target-item-3-2"></span>
+		<span id="target-item-3-3"></span>
+		<div class="carousel-item item-3-1 light">
+			<img src="@img\catalog\1.jpg" alt="">
+			<div class="heading">
+				<h2>Элемент 1</h2>
+				<p>Содержимое будет здесь.</p>
+			</div>
+			<a class="arrow arrow-prev" href="#target-item-3-3"></a>
+			<a class="arrow arrow-next" href="#target-item-3-2"></a>
+		</div>
+		<div class="carousel-item item-3-2">
+			<img src="@img\catalog\3.jpg" alt="">
+			<div class="heading">
+				<h2>Элемент 2</h2>
+				<p>Содержимое будет здесь.</p>
+			</div>
+			<a class="arrow arrow-prev" href="#target-item-3-1"></a>
+			<a class="arrow arrow-next" href="#target-item-3-3"></a>
+		</div>
+		<div class="carousel-item item-3-3 light">
+			<img src="@img\catalog\5.jpg" alt="">
+			<div class="heading">
+				<h2>Элемент 3</h2>
+				<p>Содержимое будет здесь.</p>
+			</div>
+			<a class="arrow arrow-prev" href="#target-item-3-2"></a>
+			<a class="arrow arrow-next" href="#target-item-3-1"></a>
+		</div>
+	</div> -->
 </div>

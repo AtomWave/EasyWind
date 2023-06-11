@@ -61,6 +61,10 @@
 			@include adaptiveValue("width", 600, 120, 3000, 319.98, 1);
 			max-width: 290px;
 			max-height: 20vh;
+			transition: 1s; /* Время эффекта */
+			&:hover {
+				transform: scale(1.05); /* Увеличиваем масштаб */
+			}
 		}
 	}
 }
@@ -154,6 +158,10 @@
 			max-height: 2.3vh;
 			max-width: 100%;
 			cursor: pointer;
+			transition: 1s; /* Время эффекта */
+			&:hover {
+				transform: scale(1.05); /* Увеличиваем масштаб */
+			}
 		}
 		&:last-child {
 			@include adaptiveValue("padding-left", 75, 30, 1368, 319.98, 1);

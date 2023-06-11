@@ -67,12 +67,12 @@ function initSliders() {
 
 
 			// Пагинация
-			   /*
+		/*
 			pagination: {
 				el: '.swiper-pagination',
 				clickable: true,
 			},
-			*/
+		*/
 
 			// Скроллбар
 			/*

@@ -94,6 +94,10 @@
 		img {
 			@include adaptiveValue("width", 900, 120, 3000, 319.98, 1);
 			max-width: 330px;
+			transition: 1s; /* Время эффекта */
+			&:hover {
+				transform: scale(1.05); /* Увеличиваем масштаб */
+			}
 		}
 	}
 }
@@ -108,9 +112,6 @@
 	// .image-slider__image
 	&__image {
 		@include adaptiveValue("min-height", 1840, 200, 5000, 319.98, 1);
-		// height: 100vh;
-		// text-align: center;
-		// overflow: hidden;
 		position: relative;
 		img {
 			width: 100%;

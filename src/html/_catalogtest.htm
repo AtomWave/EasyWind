@@ -1,0 +1,110 @@
+<ul class="products clearfix">
+	<li class="product-wrapper">
+		<a href="" class="product">
+			<div class="product-photo">
+				<img src="@img\catalog\1.jpg" alt="">
+			</div>
+		</a>
+	</li>
+	<li class="product-wrapper">
+		<a href="" class="product">
+			<div class="product-photo">
+				<img src="@img\catalog\2.jpg" alt="">
+			</div>
+		</a>
+	</li>
+	<li class="product-wrapper">
+		<a href="" class="product">
+			<div class="product-photo">
+				<img src="@img\catalog\3.jpg" alt="">
+			</div>
+		</a>
+	</li>
+	<li class="product-wrapper">
+		<a href="" class="product">
+			<div class="product-photo">
+				<img src="@img\catalog\4.jpg" alt="">
+			</div>
+		</a>
+	</li>
+	<li class="product-wrapper">
+		<a href="" class="product">
+			<div class="product-photo">
+				<img src="@img\catalog\5.jpg" alt="">
+			</div>
+		</a>
+	</li>
+	<li class="product-wrapper">
+		<a href="" class="product">
+			<div class="product-photo">
+				<img src="@img\catalog\6.jpg" alt="">
+			</div>
+		</a>
+	</li>
+	<li class="product-wrapper">
+		<a href="" class="product">
+			<div class="product-photo">
+				<img src="@img\catalog\1.jpg" alt="">
+			</div>
+		</a>
+	</li>
+	<li class="product-wrapper">
+		<a href="" class="product">
+			<div class="product-photo">
+				<img src="@img\catalog\2.jpg" alt="">
+			</div>
+		</a>
+	</li>
+</ul> 
+
+<!--Вот наша основная оболочка.
+Поскольку наши элементы карусели получают свой размер от своего родителя,
+мы должны указать его высоту. -->
+<div class="carousel-wrapper">
+	<!--Карусель использует обычные ссылки для циклического просмотра каждого элемента.
+	Ссылки на самом деле нацелены на эти display: none; охватывает, поэтому наша страница не
+	прыгайте, как обычно при использовании прыжковых ссылок.-->
+	<span id="target-item-1"></span> 
+	<span id="target-item-2"></span>
+	<span id="target-item-3"></span>
+	<!--Вот наша карусель.
+	У каждого есть класс «элемент карусели», который мы используем для общего стиля.
+	и класс item-#, который мы используем для управления его непрозрачностью.
+	в зависимости от того, какой target-item-# в настоящее время нацелен -->
+	<div class="carousel-item item-1 light">
+		<!--Мы можем добавить сюда любой контент, просто убедитесь, что
+		ваша .carousel-wrapper достаточно велика, чтобы вместить весь контент. -->
+		<img src="@img\catalog\1.jpg" alt="">
+	<div class="heading">
+			<h2>Элемент 1</h2>
+			<p>Содержимое будет здесь.</p>
+	</div>
+		<!--Вот ссылки, управляющие каруселью! Убеждаться
+		href каждого из них указывает на правильный целевой элемент-#
+		чтобы карусель вращалась последовательно. -->
+		<a class="arrow arrow-prev" href="#target-item-3"></a>
+		<a class="arrow arrow-next" href="#target-item-2"></a>
+	</div>
+	<!--А вот еще парочка элементов карусели, чтобы
+	у нас есть некоторый контент для прокрутки. Обратите внимание на «легкий» класс?
+	Королевский синий — довольно темный цвет фона, поэтому мы добавим CSS
+	правило, чтобы сделать текст белым, если элемент карусели имеет этот класс-->
+	<div class="carousel-item item-2">
+		<img src="@img\catalog\3.jpg" alt="">
+		<div class="heading">
+			<h2>Элемент 1</h2>
+			<p>Содержимое будет здесь.</p>
+	</div>
+		<a class="arrow arrow-prev" href="#target-item-1"></a>
+		<a class="arrow arrow-next" href="#target-item-3"></a>
+	</div>
+	<div class="carousel-item item-3 light">
+		<img src="@img\catalog\5.jpg" alt="">
+		<div class="heading">
+			<h2>Элемент 1</h2>
+			<p>Содержимое будет здесь.</p>
+	</div>
+		<a class="arrow arrow-prev" href="#target-item-2"></a>
+		<a class="arrow arrow-next" href="#target-item-1"></a>
+	</div>
+</div>
