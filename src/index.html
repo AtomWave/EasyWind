@@ -1,181 +1,73 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Портфолио</title>
-</head>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"EasyWind"
+})
 
 <body>
-	<div class="rootpage">
-		<h1>ПОРТФОЛИО</h1>
-		<!-- <div class="rootpage__info">
-			Особенности проекта
-		</div> -->
-		<h2>Готовые страницы:</h2>
-		<ol class="rootpage__list">
-			<li><a target="_blank" href="home.html">EasyWind</a></li>
-			<li><a target="_blank" href="allcovers.html">AllCovers</a></li>
-			<!-- <li><a target="_blank" href="slid.html">Слайдер</a></li> -->
-		</ol>
-		<!-- <h2>Попапы:</h2>
-		<ol class="rootpage__list">
-			<li><a target="_blank" href="home.html#"></a></li>
-		</ol> -->
-		<div class="rootpage__tnx">
-			<h2>Спасибо за заказ!</h2>
-			<p>Буду рад хорошему отзыву.</p>
-			<p>Обращайтесь еще!</p>
-		</div>
-		<div class="rootpage__contacts">
-			<h2>Мои контакты:</h2>
-			<p>Почта: <a href="mailto:AtomWave@yandex.ru">AtomWave@yandex.ru</a></p>
-			<p>Телефон: <a href="tel:+79850303789">+7(985) 03-03-789</a></p>
-			<p>Соц. сеть: <a href="https://vk.com/id250250701">VK</a></p>
+	<div class="wrapper">
+		<div class="page">
+			<div class="page__container">
+				<div class="page__content content-page">
+					<div class="content-page__page-logo logo-page">
+						<a target="_blank" href="slid.html" class="logo-page__logo-picture">
+							<img src="@img\icons\logo.svg" alt="">
+						</a>
+					</div>
+					<div class="content-page__inner-page">
+						<div class="inner-page__custom custom-content">
+							<div class="custom-content__image">
+								<img src="@img\icons\custom_w.svg" alt="">
+							</div>
+						</div>
+						<div class="inner-page__picture">
+							<img src="@img\icons\staf.png" alt="">
+						</div>
+						<div class="inner-page__partners partners-info">
+							<div class="partners-info__title">
+								<h2>наши партнеры:</h1>
+							</div>
+							<ul class="partners-info__icon partners-icon">
+								<li class="partners-icon__item"><a href="https://sailinsochi.ru/"><img src="@img\icons\moyparus.png"
+											alt=""></a>
+								</li>
+								<li class="partners-icon__item"><a href="https://windsurfclub.ru/"><img src="@img\icons\wsc.png"
+											alt=""></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="content-page__footer footer-content">
+						<div class="footer-content__copyright copyright-content">
+							<div class="copyright-content__text text-content">
+								<p>
+									Copyright <span>Ⓒ</span> <span>easywind</span> 2022-2023 <span>Все права защищены.</span>
+								</p>
+								<p>
+									<span>
+										Tоварный знак easywind зарегистрирован в Государственном реестре
+										<br>
+										товарных знаков и знаков обслуживания РФ. Cвидетельство №887617.
+									</span>
+								</p>
+							</div>
+							<div class="footer-content__team team-content">
+								<div class="team-content__text">
+									<h3>Дизайн сайта :</h3>
+								</div>
+								<div class="team-content__team-logo logo-page">
+									<a target="_blank" href="https://easywind.ru/" class="logo-page__logo-picture"><img
+											src="@img\icons\team_logo.svg" alt=""></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
 </body>
-<style>
-	@charset "UTF-8";
-	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
-
-	*,
-	*::before,
-	*::after {
-		padding: 0px;
-		margin: 0px;
-		border: 0px;
-		box-sizing: border-box;
-	}
-
-	html,
-	body {
-		height: 100%;
-		margin: 0;
-		padding: 0;
-		min-width: 320px;
-		width: 100%;
-		color: #fff;
-		background-color: #1f6e75e1;
-	}
-
-	body {
-		font-family: Montserrat;
-		font-size: 100%;
-		line-height: 1;
-		font-size: 1rem;
-	}
-
-	a {
-		text-decoration: underline;
-		color: #252846
-	}
-
-	a:visited {
-		text-decoration: underline;
-		color: #aaa768;
-	}
-
-	a:hover {
-		text-decoration: none;
-	}
-
-	ul li {
-		list-style: none;
-	}
-
-	img {
-		vertical-align: top;
-	}
-
-	.wrapper {
-		width: 100%;
-		min-height: 100%;
-		overflow: hidden;
-	}
-
-	.rootpage {
-		padding: 30px;
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-	}
-
-	@media (max-width: 767px) {
-		.rootpage {
-			padding: 30px 15px;
-		}
-	}
-
-	h1 {
-		color: #b2d3db;
-		font-size: 2.5rem;
-		margin: 0px 0px 1.25rem 0px;
-	}
-
-	@media (max-width: 767px) {
-		h1 {
-			font-size: 1.85rem;
-			margin: 0px 0px 1.25rem 0px;
-		}
-	}
-
-	h2 {
-		color: #252846;
-		font-size: 1.25rem;
-		margin: 0px 0px 1rem 0px;
-	}
-
-	@media (max-width: 767px) {
-		h2 {
-			font-size: 1.125rem;
-			margin: 0px 0px 1rem 0px;
-		}
-	}
-
-	.rootpage__info {
-		line-height: 140%;
-		margin: 0px 0px 1.5rem 0px;
-	}
-
-	.rootpage__list {
-		margin: 0px 0px 2.25rem 1.25rem;
-	}
-
-	.rootpage__list li:not(:last-child) {
-		margin: 0px 0px 15px 0px;
-	}
-
-	.rootpage__contacts,
-	.rootpage__tnx {
-		border-radius: 12px;
-		padding: 20px 65px;
-		line-height: 140%;
-	}
-
-	@media (max-width: 767px) {
-
-		.rootpage__contacts,
-		.rootpage__tnx {
-			border-radius: 40px;
-			padding: 20px;
-		}
-	}
-
-	.rootpage__contacts {
-		background: #36aac7;
-
-	}
-
-	.rootpage__contacts a {
-		color: #252846;
-	}
-
-	.rootpage__tnx {
-		background: #2dc2a4;
-		margin: 0px 0px 1rem 0px;
-	}
-</style>
 
 </html>
